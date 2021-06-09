@@ -1,4 +1,5 @@
 # Landing-Page
 My first project as Web Developer.
 
-See the [project]https://nrdevpy.github.io/Landing-Page/
+FrontEnd project where you can see how could be your website as a professional freelancer.
+https://nrdevpy.github.io/Landing-Page/
