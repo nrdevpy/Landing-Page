@@ -9,48 +9,60 @@
 }
 
 /* Globales */
-    /* 1rem = 10px */
+/* 1rem = 10px */
 html {
     font-size: 62.5%;
     box-sizing: border-box;
     scroll-snap-type: y mandatory;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
+
 body {
     font-size: 16px;
     font-family: 'Krub', sans-serif;
     margin: 0;
     background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100%);
 }
+
 main h2 {
     margin-top: 0;
 }
 
-    /* Tipografía */
+/* Tipografía */
 h1 {
     font-size: 3.8rem;
 }
+
 h2 {
     font-size: 2.8rem;
 }
+
 h3 {
     font-size: 1.8rem;
 }
-h1, h2, h3 {
+
+h1,
+h2,
+h3 {
     text-align: center;
 }
+
 footer {
     text-align: center;
     margin-top: 5rem;
 }
 
-    /* Clases Globales */
+/* Clases Globales */
 .contenedor {
     max-width: 120rem;
     margin: 0 auto;
 }
+
 .boton {
     color: var(--blanco);
     background-color: var(--secundario);
@@ -63,37 +75,44 @@ footer {
     width: 80%;
     border: none;
 }
+
 @media (min-width: 768px) {
     .boton {
         width: auto;
     }
 }
+
 .boton:hover {
     cursor: pointer;
 }
+
 /* Utilidades */
 .w-100 {
     width: 100%;
 }
+
 .flex-right {
     display: flex;
     justify-content: flex-end;
 }
+
 @media (min-width: 768px) {
     .w-100 {
         width: auto;
     }
 }
+
 .sombra {
-    box-shadow: 0px 6px 26px 2px rgba(0,0,0,0.47);
     padding: 0 5rem;
     margin: 0 5rem;
 }
+
 @media (min-width: 768px) {
     .sombra {
         margin: 0 10rem;
     }
 }
+
 .sombra h2 {
     padding-top: 3rem;
 }
@@ -103,21 +122,24 @@ footer {
     font-size: 2rem;
 }
 
-    /* Menú */
+/* Menú */
 .nav-bg {
     background-color: var(--secundario);
 }
+
 .navegacion-principal {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 }
+
 @media (min-width: 768px) {
     .navegacion-principal {
         flex-direction: row;
     }
 }
+
 .navegacion-principal a {
     text-decoration: none;
     font-size: 2rem;
@@ -126,17 +148,19 @@ footer {
     width: 100%;
     text-align: center;
 }
+
 @media (min-width: 768px) {
     .navegacion-principal a {
         width: auto;
     }
 }
+
 .navegacion-principal a:hover {
     background-color: var(--primario);
     transition: .8s;
 }
 
-    /* Hero */
+/* Hero */
 .hero {
     background-image: url(../img/hero.jpg);
     background-repeat: no-repeat;
@@ -146,33 +170,37 @@ footer {
     margin-bottom: 3rem;
     background-position-x: 60%;
 }
+
 @media (min-width: 768px) {
     .hero {
         background-position-y: 80%;
     }
 }
+
 .contenido-hero {
     position: absolute;
     background-color: rgba(0 0 0 / 50%);
     width: 100%;
     height: 100%;
-    
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
 .contenido-hero h2,
 .contenido-hero p {
     color: var(--blanco);
 }
+
 .ubicacion {
     display: flex;
     align-items: flex-end;
     margin-bottom: 3rem;
 }
 
-    /* Servicios */
+/* Servicios */
 @media (min-width: 925px) {
     .servicios {
         display: grid;
@@ -182,15 +210,18 @@ footer {
         margin: 2rem 0;
     }
 }
+
 .servicio {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
+
 .servicio h3 {
     font-size: 2rem;
 }
+
 .servicio .iconos {
     background-color: var(--primario);
     height: 8rem;
@@ -201,10 +232,12 @@ footer {
     align-items: center;
     justify-content: space-evenly;
 }
-    /* Formulario */
+
+/* Formulario */
 .formulario fieldset {
     border: none;
 }
+
 .formulario {
     background-color: var(--gris);
     width: min(80rem, 100%);
@@ -212,6 +245,7 @@ footer {
     padding: 2rem;
     border-radius: 0.8rem;
 }
+
 .formulario legend {
     text-align: center;
     font-size: 1.8rem;
@@ -219,6 +253,7 @@ footer {
     font-weight: bold;
     color: var(--primario);
 }
+
 @media (min-width: 768px) {
     .contenedor-campos {
         padding-top: 1rem;
@@ -233,18 +268,22 @@ footer {
         grid-column: 1 / 3;
     }
 }
+
 .campo {
     margin-bottom: 2rem;
 }
+
 .campo textarea {
     height: 15rem;
 }
+
 .campo label {
     color: var(--blanco);
     font-weight: bold;
     display: block;
     padding: .5rem;
 }
+
 .input-text {
     width: 100%;
     border: none;
